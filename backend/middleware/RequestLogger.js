@@ -1,10 +1,12 @@
  const RequestLogger = (request, response, next) => {
-  console.log('--------------------Hello')
-   console.log('v---')
+  console.log('\n\n--------------------')
+  console.log('Request Logger')
+  console.log('--------------------')
+  console.log('v---')
   console.log('Method:', request.method)
   console.log('Path:  ', request.path)
   console.log('Body:  ', request.body)
-  console.log('^---')
+   console.log('--------------------\n\n')
   next()
 }
 

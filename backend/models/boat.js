@@ -3,13 +3,6 @@ require('dotenv').config()
 
 const url = process.env.MONGODB_URI
 
-mongoose.connect(url).then(result =>{
-  console.log("Connected to MongoDB.")
-})
-  .catch(error => {
-    console.log("failed to connect to MongoDB:", error)
-  })
-
 const boatSchema = new mongoose.Schema({
   boat_name: String,
   boat_type: String,
@@ -25,9 +18,7 @@ boatSchema.set('toJSON', {
 
 const Boat = mongoose.model('Boat',boatSchema)
 
-Boat.find({}).then(result => {
-  result.forEach(boat => {
-    console.log("boat found from datasource ", boat)
-  })
-  mongoose.connection.close()
-})
+mongoose.connect(url)
+
+
+module.exports = mongoose.model('Boat',boatSchema)
