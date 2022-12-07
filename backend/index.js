@@ -2,9 +2,9 @@ require('dotenv').config()
 const express = require('express')
 const app = express()
 const Boat = require("./models/boat")
-const {ErrorHandler} =    require("./middleware/ErrorHandler")
+const {ErrorHandler} = require("./middleware/ErrorHandler")
 // const {UnknownEndpoint} = require("./middleware/UnknownEndpoint")
-const {RequestLogger} =   require('./middleware/RequestLogger')
+const {RequestLogger} = require('./middleware/RequestLogger')
 
 // Use
 app.use(express.static('build'))
@@ -15,15 +15,16 @@ app.use(ErrorHandler) // Keep this as last "use" statement
 
 // GET
 app.get('/', (request, response) => {
- response.send("<h1>Hello World</h1>") })
+  response.send("<h1>Hello World</h1>")
+})
 
-app.get('/api/boats', (request, response ) => {
+app.get('/api/boats', (request, response) => {
   // console.log("Boat",Boat.find({}).get("boat_name"))
   let foundBoats;
- Boat.find({}).then(boats => {
-   foundBoats = JSON.stringify(boats)
-   response.send(foundBoats)
- })
+  Boat.find({}).then(boats => {
+    foundBoats = JSON.stringify(boats)
+    response.send(foundBoats)
+  })
 })
 
 app.get('/api/boats/:id', (request, response, next) => {
@@ -40,14 +41,27 @@ app.get('/api/boats/:id', (request, response, next) => {
 
 app.get('/api/boats/name/:boat_name', (request, response) => {
   const boat_name = request.params.boat_name
-  const boat = Boat.find(boat => boat.boat_name === boat_name)
-  if(boat){ response.send(boat) } else { response.status(404).end() }
+
+  const query  = Boat.where({ boat_name: boat_name });
+  query.findOne(function (err, boat) {
+    if (err) return ErrorHandler(err,request, response, null );
+    if (boat) {
+      // doc may be null if no document matched
+      console.log("found boat", JSON.stringify(boat))
+    }
+  });
+
+
 })
 
 app.get('/api/boats/type/:boat_type', (request, response) => {
   const boat_type = request.params.boat_type
   const boat = Boat.filter(boat => boat.boat_type === boat_type)
-  if(boat){ response.send(boat) } else { response.status(404).end() }
+  if (boat) {
+    response.send(boat)
+  } else {
+    response.status(404).end()
+  }
 })
 
 // POST

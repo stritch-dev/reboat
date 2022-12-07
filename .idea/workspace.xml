@@ -8,8 +8,6 @@
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/backend/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/backend/index.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/backend/middleware/RequestLogger.js" beforeDir="false" afterPath="$PROJECT_DIR$/backend/middleware/RequestLogger.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/middleware/UnknownEndpoint.js" beforeDir="false" afterPath="$PROJECT_DIR$/backend/middleware/UnknownEndpoint.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/models/boat.js" beforeDir="false" afterPath="$PROJECT_DIR$/backend/models/boat.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -99,7 +97,7 @@
       <workItem from="1670091031704" duration="1042000" />
       <workItem from="1670092086012" duration="151000" />
       <workItem from="1670203308155" duration="1633000" />
-      <workItem from="1670365189225" duration="2322000" />
+      <workItem from="1670365189225" duration="6885000" />
     </task>
     <servers />
   </component>
