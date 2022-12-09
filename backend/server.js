@@ -1,6 +1,7 @@
 require('dotenv').config()
 const express = require('express')
 const app = express()
+const server = app
 const Boat = require("./models/boat")
 const {ErrorHandler} = require("./middleware/ErrorHandler")
 // const {UnknownEndpoint} = require("./middleware/UnknownEndpoint")
@@ -81,3 +82,5 @@ const PORT = process.env.PORT
 app.listen(PORT, () => {
   console.log(`Server running on port ${PORT}`)
 })
+
+module.exports = server
