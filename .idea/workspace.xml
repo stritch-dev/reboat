@@ -6,8 +6,7 @@
   <component name="ChangeListManager">
     <list default="true" id="c28e3d19-e2ad-4709-8878-8eb309ed1bfa" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/backend/index.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/middleware/RequestLogger.js" beforeDir="false" afterPath="$PROJECT_DIR$/backend/middleware/RequestLogger.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/test/index.test.js" beforeDir="false" afterPath="$PROJECT_DIR$/backend/test/index.test.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -46,6 +45,7 @@
     &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
     &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
     &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs.jest.jest_package&quot;: &quot;/home/jd/dev/reboat/backend/node_modules/jest&quot;,
     &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
     &quot;project.structure.last.edited&quot;: &quot;Project&quot;,
     &quot;project.structure.proportion&quot;: &quot;0.15&quot;,
@@ -59,7 +59,72 @@
       <recent name="$PROJECT_DIR$/backend/middleware" />
     </key>
   </component>
-  <component name="RunManager">
+  <component name="RunManager" selected="Jest.Boat Endpoints">
+    <configuration name="Boat Endpoints" type="JavaScriptTestRunnerJest" temporary="true" nameIsGenerated="true">
+      <node-interpreter value="project" />
+      <node-options value="" />
+      <jest-package value="$PROJECT_DIR$/backend/node_modules/jest" />
+      <working-dir value="$PROJECT_DIR$/backend" />
+      <envs />
+      <scope-kind value="SUITE" />
+      <test-file value="$PROJECT_DIR$/backend/test/index.test.js" />
+      <test-names>
+        <test-name value="Boat Endpoints" />
+      </test-names>
+      <method v="2" />
+    </configuration>
+    <configuration name="Boat Endpoints.GET / should return '&lt;h1&gt;Hello World&lt;/h1&gt;'" type="JavaScriptTestRunnerJest" temporary="true" nameIsGenerated="true">
+      <node-interpreter value="project" />
+      <node-options value="" />
+      <jest-package value="$PROJECT_DIR$/backend/node_modules/jest" />
+      <working-dir value="$PROJECT_DIR$/backend" />
+      <envs />
+      <scope-kind value="TEST" />
+      <test-file value="$PROJECT_DIR$/backend/test/index.test.js" />
+      <test-names>
+        <test-name value="Boat Endpoints" />
+        <test-name value="GET / should return '&lt;h1&gt;Hello World&lt;/h1&gt;'" />
+      </test-names>
+      <method v="2" />
+    </configuration>
+    <configuration name="Boat Endpoints.GET / should return 'text/html'" type="JavaScriptTestRunnerJest" temporary="true" nameIsGenerated="true">
+      <node-interpreter value="project" />
+      <node-options value="" />
+      <jest-package value="$PROJECT_DIR$/backend/node_modules/jest" />
+      <working-dir value="$PROJECT_DIR$/backend" />
+      <envs />
+      <scope-kind value="TEST" />
+      <test-file value="$PROJECT_DIR$/backend/test/index.test.js" />
+      <test-names>
+        <test-name value="Boat Endpoints" />
+        <test-name value="GET / should return 'text/html'" />
+      </test-names>
+      <method v="2" />
+    </configuration>
+    <configuration name="Boat Endpoints.GET api/boats returns a list of boats" type="JavaScriptTestRunnerJest" temporary="true" nameIsGenerated="true">
+      <node-interpreter value="project" />
+      <node-options value="" />
+      <jest-package value="$PROJECT_DIR$/backend/node_modules/jest" />
+      <working-dir value="$PROJECT_DIR$/backend" />
+      <envs />
+      <scope-kind value="TEST" />
+      <test-file value="$PROJECT_DIR$/backend/test/index.test.js" />
+      <test-names>
+        <test-name value="Boat Endpoints" />
+        <test-name value="GET api/boats returns a list of boats" />
+      </test-names>
+      <method v="2" />
+    </configuration>
+    <configuration name="index.test.js" type="JavaScriptTestRunnerJest" temporary="true" nameIsGenerated="true">
+      <node-interpreter value="project" />
+      <node-options value="" />
+      <jest-package value="$PROJECT_DIR$/backend/node_modules/jest" />
+      <working-dir value="$PROJECT_DIR$/backend" />
+      <envs />
+      <scope-kind value="TEST_FILE" />
+      <test-file value="$PROJECT_DIR$/backend/test/index.test.js" />
+      <method v="2" />
+    </configuration>
     <configuration default="true" type="JetRunConfigurationType">
       <module name="reboat" />
       <method v="2">
@@ -73,12 +138,13 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="index.js" type="NodeJSConfigurationType" temporary="true" nameIsGenerated="true" path-to-js-file="$PROJECT_DIR$/backend/index.js" working-dir="$PROJECT_DIR$/backend">
-      <method v="2" />
-    </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Node.js.index.js" />
+        <item itemvalue="Jest.Boat Endpoints" />
+        <item itemvalue="Jest.Boat Endpoints.GET api/boats returns a list of boats" />
+        <item itemvalue="Jest.Boat Endpoints.GET / should return 'text/html'" />
+        <item itemvalue="Jest.index.test.js" />
+        <item itemvalue="Jest.Boat Endpoints.GET / should return '&lt;h1&gt;Hello World&lt;/h1&gt;'" />
       </list>
     </recent_temporary>
   </component>
@@ -97,7 +163,8 @@
       <workItem from="1670091031704" duration="1042000" />
       <workItem from="1670092086012" duration="151000" />
       <workItem from="1670203308155" duration="1633000" />
-      <workItem from="1670365189225" duration="6885000" />
+      <workItem from="1670365189225" duration="12776000" />
+      <workItem from="1670549474828" duration="1626000" />
     </task>
     <servers />
   </component>
