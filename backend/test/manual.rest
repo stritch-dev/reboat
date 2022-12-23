@@ -1,0 +1,28 @@
+### get root
+GET localhost:3001
+
+### get a specific boat
+GET localhost:3001/api/boats/6385687a5aa655764359514f
+Accept: application/json
+
+### get all boats
+GET localhost:3001/api/boats/
+Accept: application/json
+
+### add one boat
+POST localhost:3001//api/boats
+Content-Type: application/json
+Accept: application/json
+
+{
+"boat_name": "flower",
+"boat_type": "double"
+}
+
+> {%
+ client.test("request executed", () => {
+ client.log("hello there")
+ client.assert(response.status === 204, "Response is not 204.")
+ })
+ %}
+

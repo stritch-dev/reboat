@@ -5,12 +5,12 @@ const server = app
 const Boat = require("./models/boat")
 const {ErrorHandler} = require("./middleware/ErrorHandler")
 // const {UnknownEndpoint} = require("./middleware/UnknownEndpoint")
-const {RequestLogger} = require('./middleware/RequestLogger')
+// const {RequestLogger} = require('./middleware/RequestLogger')
 
 // Use
 app.use(express.static('build'))
 app.use(express.json())
-app.use(RequestLogger)
+// app.use(RequestLogger)
 // app.use(UnknownEndpoint)
 app.use(ErrorHandler) // Keep this as last "use" statement
 
@@ -20,11 +20,10 @@ app.get('/', (request, response) => {
 })
 
 app.get('/api/boats', (request, response) => {
-  // console.log("Boat",Boat.find({}).get("boat_name"))
-  let foundBoats;
-  Boat.find({}).then(boats => {
-    foundBoats = JSON.stringify(boats)
-    response.send(foundBoats)
+  console.log(" searching for boats")
+  Boat.find().then(boats => {
+    console.log("boats found", boats  )
+    response.send(boats)
   })
 })
 
@@ -66,9 +65,9 @@ app.get('/api/boats/type/:boat_type', (request, response) => {
 })
 
 // POST
-app.post('/api/boats', (request, response) => {
-  const boat = request.body
-  response.json(boat)
+app.post('/api/boats', (request,response) => {
+  Boat.create(request.body)
+  response.sendStatus(204)
 })
 
 // DELETE

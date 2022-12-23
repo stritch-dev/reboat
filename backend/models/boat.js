@@ -1,7 +1,13 @@
 const mongoose = require('mongoose')
 require('dotenv').config()
 
-const url = process.env.MONGODB_URI
+mongoose.connect(process.env.MONGODB_URI)
+  .then(result => {
+    console.log("Connected to MongoDB")
+  })
+  .catch( error => {
+    console.log("Error connecting to MongoDB", error.message)
+  })
 
 const boatSchema = new mongoose.Schema({
   boat_name: String,
@@ -15,10 +21,5 @@ boatSchema.set('toJSON', {
     delete returnedObject.__v
   }
 })
-
-const Boat = mongoose.model('Boat',boatSchema)
-
-mongoose.connect(url)
-
 
 module.exports = mongoose.model('Boat',boatSchema)
