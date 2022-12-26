@@ -1,9 +1,6 @@
 ### get root
 GET localhost:3001
 
-### get a specific boat
-GET localhost:3001/api/boats/6385687a5aa655764359514f
-Accept: application/json
 
 ### get all boats
 GET localhost:3001/api/boats/
@@ -15,14 +12,31 @@ Content-Type: application/json
 Accept: application/json
 
 {
-"boat_name": "flower",
+"boat_name": "longer",
 "boat_type": "double"
 }
 
 > {%
  client.test("request executed", () => {
- client.log("hello there")
  client.assert(response.status === 204, "Response is not 204.")
  })
  %}
+
+### Get boats by name
+GET localhost:3001/api/boats/name/longer
+
+
+### Delete one boat by object id
+DELETE localhost:3001//api/boats/{{_id_}}
+
+> {%
+  client.test("request executed", () => {
+client.assert(response.status === 204, "Response for delete is not 204")
+})
+%}
+
+### get a specific boat
+GET localhost:3001/api/boats/{{_id_}}
+Accept: application/json
+
 

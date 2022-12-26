@@ -1,33 +1,30 @@
 require('dotenv').config()
 const express = require('express')
-const app = express()
-const server = app
+const server = express()
 const Boat = require("./models/boat")
 const {ErrorHandler} = require("./middleware/ErrorHandler")
 // const {UnknownEndpoint} = require("./middleware/UnknownEndpoint")
 // const {RequestLogger} = require('./middleware/RequestLogger')
 
 // Use
-app.use(express.static('build'))
-app.use(express.json())
+server.use(express.static('build'))
+server.use(express.json())
 // app.use(RequestLogger)
 // app.use(UnknownEndpoint)
-app.use(ErrorHandler) // Keep this as last "use" statement
+server.use(ErrorHandler) // Keep this as last "use" statement
 
 // GET
-app.get('/', (request, response) => {
+server.get('/', (request, response) => {
   response.send("<h1>Hello World</h1>")
 })
 
-app.get('/api/boats', (request, response) => {
-  console.log(" searching for boats")
+server.get('/api/boats', (request, response) => {
   Boat.find().then(boats => {
-    console.log("boats found", boats  )
     response.send(boats)
   })
 })
 
-app.get('/api/boats/:id', (request, response, next) => {
+server.get('/api/boats/:id', (request, response, next) => {
   Boat.findById(request.params.id)
     .then(boat => {
       if (boat) {
@@ -39,46 +36,48 @@ app.get('/api/boats/:id', (request, response, next) => {
     .catch(error => next(error))
 })
 
-app.get('/api/boats/name/:boat_name', (request, response) => {
-  const boat_name = request.params.boat_name
-
-  const query  = Boat.where({ boat_name: boat_name });
-  query.findOne(function (err, boat) {
+server.get('/api/boats/name/:boat_name', (request, response) => {
+  const query  = Boat.where({ boat_name: request.params.boat_name });
+  query.find(function (err, boats) {
     if (err) return ErrorHandler(err,request, response, null );
-    if (boat) {
+    if (boats) {
       // doc may be null if no document matched
-      console.log("found boat", JSON.stringify(boat))
+      console.log("found boat", JSON.stringify(boats))
+      response.send(boats)
     }
   });
-
-
 })
 
-app.get('/api/boats/type/:boat_type', (request, response) => {
-  const boat_type = request.params.boat_type
-  const boat = Boat.filter(boat => boat.boat_type === boat_type)
-  if (boat) {
-    response.send(boat)
-  } else {
-    response.status(404).end()
-  }
+server.get('/api/boats/type/:boat_type', (request, response) => {
+  const query = Boat.where({boat_type: request.params.boat_type})
+  query.find( function (err, boats) {
+    if (err) return ErrorHandler(err, request, response, null)
+    if (boats)  response.send(boats)
+    else (response.status(404).end())
+  })
 })
 
 // POST
-app.post('/api/boats', (request,response) => {
+server.post('/api/boats', (request,response) => {
   Boat.create(request.body)
   response.sendStatus(204)
 })
 
 // DELETE
-app.delete('/api/boats/:id', (request, response) => {
-  const id = Number(request.params.id)
-  Boat.findByIdAndDelete(id)
+server.delete('/api/boats/:id', (request, response) => {
+  const id = request.params.id
+  Boat.findByIdAndDelete(id, function(err,docs) {
+    if(err){
+      console.log(err)
+    } else {
+      console.log("Deleted", docs)
+    }
+  })
   response.status(204).end()
 })
 
 const PORT = process.env.PORT
-app.listen(PORT, () => {
+server.listen(PORT, () => {
   console.log(`Server running on port ${PORT}`)
 })
 

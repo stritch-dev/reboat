@@ -1,0 +1,259 @@
+DELETE http://localhost:3001/api/boats/63835f77de19c84659b9a888
+
+###
+
+GET http://localhost:3001/api/boats/63835f77de19c84659b9a888
+Accept: application/json
+
+###
+
+GET http://localhost:3001/api/boats/63835f77de19c84659b9a888
+Accept: application/json
+
+###
+
+DELETE http://localhost:3001/api/boats/63835f77de19c84659b9a888
+
+###
+
+GET http://localhost:3001/api/boats/63835f77de19c84659b9a888
+Accept: application/json
+
+<> 2022-12-26T130800.200.json
+
+###
+
+DELETE http://localhost:3001/api/boats/63835f77de19c84659b9a888
+
+###
+
+GET http://localhost:3001/api/boats/63835f77de19c84659b9a888
+Accept: application/json
+
+<> 2022-12-26T130740.200.json
+
+###
+
+GET http://localhost:3001/api/boats/63835f77de19c84659b9a888
+Accept: application/json
+
+<> 2022-12-25T182905.200.json
+
+###
+
+DELETE http://localhost:3001/api/boats/63835f77de19c84659b9a888
+
+###
+
+GET http://localhost:3001/api/boats/63835f77de19c84659b9a888
+Accept: application/json
+
+<> 2022-12-25T182619.200.json
+
+###
+
+GET http://localhost:3001/api/boats/63835f77de19c84659b9a888
+Accept: application/json
+
+<> 2022-12-25T182548.200.json
+
+###
+
+DELETE http://localhost:3001/api/boats/63835f77de19c84659b9a888
+
+###
+
+DELETE http://localhost:3001/api/boats/63835f77de19c84659b9a888
+
+###
+
+DELETE http://localhost:3001/api/boats/63835f77de19c84659b9a888
+
+###
+
+GET http://localhost:3001/api/boats/63835f77de19c84659b9a888
+Accept: application/json
+
+<> 2022-12-25T182437.200.json
+
+###
+
+DELETE http://localhost:3001/api/boats/63835f77de19c84659b9a888
+
+###
+
+DELETE http://localhost:3001/api/boats/63835f77de19c84659b9a888
+
+###
+
+GET http://localhost:3001/api/boats/63835f77de19c84659b9a888
+Accept: application/json
+
+<> 2022-12-25T182415.200.json
+
+###
+
+GET http://localhost:3001/api/boats/63835f77de19c84659b9a888
+Accept: application/json
+
+<> 2022-12-25T182413.200.json
+
+###
+
+GET http://localhost:3001/api/boats/63835f77de19c84659b9a888
+Accept: application/json
+
+<> 2022-12-25T182410.200.json
+
+###
+
+GET http://localhost:3001/api/boats/63835f77de19c84659b9a888
+Accept: application/json
+
+<> 2022-12-25T182335.200.json
+
+###
+
+GET http://localhost:3001/api/boats/63835f77de19c84659b9a888
+Accept: application/json
+
+<> 2022-12-25T182326.200.json
+
+###
+
+DELETE http://localhost:3001/api/boats/63835f77de19c84659b9a888
+
+###
+
+GET http://localhost:3001/api/boats/63835f77de19c84659b9a888
+Accept: application/json
+
+<> 2022-12-25T182257.200.json
+
+###
+
+GET http://localhost:3001/api/boats/63835f77de19c84659b9a888
+Accept: application/json
+
+<> 2022-12-25T182135.200.json
+
+###
+
+GET http://localhost:3001/api/boats/63835f77de19c84659b9a888
+Accept: application/json
+
+<> 2022-12-25T182116.200.json
+
+###
+
+DELETE http://localhost:3001/api/boats/63835f77de19c84659b9a888
+
+###
+
+DELETE http://localhost:3001/api/boats/63835f77de19c84659b9a888
+
+###
+
+DELETE http://localhost:3001/api/boats/63835f77de19c84659b9a888
+
+###
+
+DELETE http://localhost:3001/api/boats/63835f77de19c84659b9a888
+
+###
+
+DELETE http://localhost:3001/api/boats/63835f77de19c84659b9a888
+
+###
+
+DELETE http://localhost:3001/api/boats/63835f77de19c84659b9a888
+
+###
+
+DELETE http://localhost:3001/api/boats/63835f77de19c84659b9a888
+
+###
+
+DELETE http://localhost:3001/api/boats/63835f77de19c84659b9a888
+
+###
+
+DELETE http://localhost:3001/api/boats/63835f77de19c84659b9a888
+
+###
+
+DELETE http://localhost:3001/api/boats/63835f77de19c84659b9a888
+
+###
+
+DELETE http://localhost:3001/api/boats/63835f77de19c84659b9a888
+
+###
+
+GET http://localhost:3001/api/boats/63835f77de19c84659b9a888
+Accept: application/json
+
+<> 2022-12-25T170546.200.json
+
+###
+
+DELETE http://localhost:3001/api/boats/63835f77de19c84659b9a888
+
+###
+
+DELETE http://localhost:3001/api/boats/63835f77de19c84659b9a888
+
+###
+
+DELETE http://localhost:3001/api/boats/63835f77de19c84659b9a888
+
+###
+
+DELETE http://localhost:3001/api/boats/63835f77de19c84659b9a888
+
+###
+
+DELETE http://localhost:3001/api/boats/63835f77de19c84659b9a888
+
+###
+
+GET http://localhost:3001/api/boats/63835f77de19c84659b9a888
+Accept: application/json
+
+<> 2022-12-25T170126.200.json
+
+###
+
+DELETE http://localhost:3001/api/boats/63835f77de19c84659b9a888
+
+###
+
+GET http://localhost:3001/api/boats/63835f77de19c84659b9a888
+Accept: application/json
+
+<> 2022-12-25T170118.200.json
+
+###
+
+DELETE http://localhost:3001/api/boats/63835f77de19c84659b9a888
+
+###
+
+GET http://localhost:3001/api/boats/63835f77de19c84659b9a888
+Accept: application/json
+
+<> 2022-12-25T170034.200.json
+
+###
+
+DELETE http://localhost:3001/api/boats/63835f77de19c84659b9a888
+
+###
+
+GET http://localhost:3001/api/boats/63835f77de19c84659b9a888
+Accept: application/json
+
+<> 2022-12-25T165922.200.json
+
+###
+
