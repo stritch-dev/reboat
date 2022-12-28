@@ -5,12 +5,17 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="c28e3d19-e2ad-4709-8878-8eb309ed1bfa" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/backend/test/http-client.env.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/frontend/src/components/Boat.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/frontend/src/components/Boats.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/backend/package-lock.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/backend/package.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/backend/server.js" beforeDir="false" afterPath="$PROJECT_DIR$/backend/server.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/test/boat_api.test.js" beforeDir="false" afterPath="$PROJECT_DIR$/backend/test/boat_api.test.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/test/index.test.js" beforeDir="false" afterPath="$PROJECT_DIR$/backend/test/index.test.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/test/manual.rest" beforeDir="false" afterPath="$PROJECT_DIR$/backend/test/manual.rest" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/package-lock.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/public/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/public/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/App.js" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/App.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/index.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -42,32 +47,32 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "ASKED_ADD_EXTERNAL_FILES": "true",
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "WebServerToolWindowFactoryState": "false",
-    "last_opened_file_path": "/home/jd/dev/reboat/frontend",
-    "node.js.detected.package.eslint": "true",
-    "node.js.detected.package.tslint": "true",
-    "node.js.selected.package.eslint": "(autodetect)",
-    "node.js.selected.package.tslint": "(autodetect)",
-    "nodejs.jest.jest_package": "/home/jd/dev/reboat/backend/node_modules/jest",
-    "nodejs_package_manager_path": "npm",
-    "project.structure.last.edited": "Project",
-    "project.structure.proportion": "0.15",
-    "project.structure.side.proportion": "0.0",
-    "rest.client.default.execution.environment": "dev",
-    "settings.editor.selected.configurable": "project.propVCSSupport.DirectoryMappings",
-    "ts.external.directory.path": "/home/jd/dev/idea/plugins/JavaScriptLanguage/jsLanguageServicesImpl/external"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;ASKED_ADD_EXTERNAL_FILES&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
+    &quot;last_opened_file_path&quot;: &quot;/home/jd/dev/reboat/frontend&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs.jest.jest_package&quot;: &quot;/home/jd/dev/reboat/frontend/node_modules/react-scripts&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;project.structure.last.edited&quot;: &quot;Project&quot;,
+    &quot;project.structure.proportion&quot;: &quot;0.15&quot;,
+    &quot;project.structure.side.proportion&quot;: &quot;0.0&quot;,
+    &quot;rest.client.default.execution.environment&quot;: &quot;dev&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;project.propVCSSupport.DirectoryMappings&quot;,
+    &quot;ts.external.directory.path&quot;: &quot;/home/jd/dev/idea/plugins/JavaScriptLanguage/jsLanguageServicesImpl/external&quot;
   }
-}]]></component>
+}</component>
   <component name="ReactDesignerToolWindowState">
     <option name="myId2Visible">
       <map>
-        <entry key="com.haulmont.rcb.reactComponents" value="true" />
-        <entry key="com.haulmont.rcb.reactInspector" value="true" />
+        <entry key="com.haulmont.rcb.reactComponents" value="false" />
+        <entry key="com.haulmont.rcb.reactInspector" value="false" />
       </map>
     </option>
   </component>
@@ -76,7 +81,7 @@
       <recent name="$PROJECT_DIR$/backend/middleware" />
     </key>
   </component>
-  <component name="RunManager" selected="HTTP Request.manual | Get boats by name">
+  <component name="RunManager" selected="Jest.renders learn react link">
     <configuration name="manual | Delete one boat by object id" type="HttpClient.HttpRequestRunConfigurationType" factoryName="HTTP Request" temporary="true" nameIsGenerated="true" path="$PROJECT_DIR$/backend/test/manual.rest" index="5" requestIdentifier="Delete one boat by object id" runType="Run single request">
       <method v="2" />
     </configuration>
@@ -89,7 +94,17 @@
     <configuration name="manual | get a specific boat" type="HttpClient.HttpRequestRunConfigurationType" factoryName="HTTP Request" temporary="true" nameIsGenerated="true" path="$PROJECT_DIR$/backend/test/manual.rest" index="2" requestIdentifier="get a specific boat" runType="Run single request">
       <method v="2" />
     </configuration>
-    <configuration name="manual | get all boats" type="HttpClient.HttpRequestRunConfigurationType" factoryName="HTTP Request" temporary="true" nameIsGenerated="true" path="$PROJECT_DIR$/backend/test/manual.rest" index="3" requestIdentifier="get all boats" runType="Run single request">
+    <configuration name="renders learn react link" type="JavaScriptTestRunnerJest" temporary="true" nameIsGenerated="true">
+      <node-interpreter value="project" />
+      <node-options value="" />
+      <jest-package value="$PROJECT_DIR$/frontend/node_modules/react-scripts" />
+      <working-dir value="$PROJECT_DIR$/frontend" />
+      <envs />
+      <scope-kind value="TEST" />
+      <test-file value="$PROJECT_DIR$/frontend/src/App.test.js" />
+      <test-names>
+        <test-name value="renders learn react link" />
+      </test-names>
       <method v="2" />
     </configuration>
     <configuration default="true" type="JetRunConfigurationType">
@@ -110,15 +125,15 @@
       <item itemvalue="HTTP Request.manual | add one boat" />
       <item itemvalue="HTTP Request.manual | Delete one boat by object id" />
       <item itemvalue="HTTP Request.manual | get a specific boat" />
-      <item itemvalue="HTTP Request.manual | get all boats" />
+      <item itemvalue="Jest.renders learn react link" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Jest.renders learn react link" />
         <item itemvalue="HTTP Request.manual | Get boats by name" />
         <item itemvalue="HTTP Request.manual | Delete one boat by object id" />
         <item itemvalue="HTTP Request.manual | get a specific boat" />
         <item itemvalue="HTTP Request.manual | add one boat" />
-        <item itemvalue="HTTP Request.manual | get all boats" />
       </list>
     </recent_temporary>
   </component>
@@ -148,7 +163,8 @@
       <workItem from="1671819348923" duration="10143000" />
       <workItem from="1671994503897" duration="831000" />
       <workItem from="1671996672161" duration="88000" />
-      <workItem from="1671996873731" duration="11086000" />
+      <workItem from="1671996873731" duration="16668000" />
+      <workItem from="1672184246168" duration="3193000" />
     </task>
     <servers />
   </component>

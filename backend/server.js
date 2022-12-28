@@ -1,6 +1,7 @@
 require('dotenv').config()
 const express = require('express')
 const server = express()
+const cors = require("cors")
 const Boat = require("./models/boat")
 const {ErrorHandler} = require("./middleware/ErrorHandler")
 // const {UnknownEndpoint} = require("./middleware/UnknownEndpoint")
@@ -11,6 +12,8 @@ server.use(express.static('build'))
 server.use(express.json())
 // app.use(RequestLogger)
 // app.use(UnknownEndpoint)
+
+server.use(cors())
 server.use(ErrorHandler) // Keep this as last "use" statement
 
 // GET
