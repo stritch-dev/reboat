@@ -5,17 +5,10 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="c28e3d19-e2ad-4709-8878-8eb309ed1bfa" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/frontend/src/components/Boat.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/frontend/src/components/Boats.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/frontend/src/components/SimpleBoat.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/backend/package-lock.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/backend/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/server.js" beforeDir="false" afterPath="$PROJECT_DIR$/backend/server.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/package-lock.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/public/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/public/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/src/App.js" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/App.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/src/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/components/Boat.js" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/components/Boat.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/components/Boats.js" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/components/Boats.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -25,8 +18,8 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="JavaScript File" />
         <option value="HTTP Public Environment File" />
+        <option value="JavaScript File" />
       </list>
     </option>
   </component>
@@ -164,7 +157,7 @@
       <workItem from="1671994503897" duration="831000" />
       <workItem from="1671996672161" duration="88000" />
       <workItem from="1671996873731" duration="16668000" />
-      <workItem from="1672184246168" duration="3193000" />
+      <workItem from="1672184246168" duration="5466000" />
     </task>
     <servers />
   </component>
