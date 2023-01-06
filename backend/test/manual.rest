@@ -7,13 +7,13 @@ GET localhost:3001/api/boats/
 Accept: application/json
 
 ### add one boat
-POST localhost:3001//api/boats
+POST localhost:3001/api/boats
 Content-Type: application/json
 Accept: application/json
 
 {
-"boat_name": "longer",
-"boat_type": "double"
+"boat_name": "faster harder",
+"boat_type": "quad"
 }
 
 > {%

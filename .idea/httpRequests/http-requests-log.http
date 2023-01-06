@@ -1,3 +1,25 @@
+POST http://localhost:3001/api/boats
+Content-Type: application/json
+Accept: application/json
+
+{
+"boat_name": "faster harder",
+"boat_type": "quad"
+}
+
+###
+
+POST http://localhost:3001/api/boats
+Content-Type: application/json
+Accept: application/json
+
+{
+"boat_name": "faster",
+"boat_type": "quad"
+}
+
+###
+
 DELETE http://localhost:3001/api/boats/63835f77de19c84659b9a888
 
 ###
@@ -243,17 +265,6 @@ GET http://localhost:3001/api/boats/63835f77de19c84659b9a888
 Accept: application/json
 
 <> 2022-12-25T170034.200.json
-
-###
-
-DELETE http://localhost:3001/api/boats/63835f77de19c84659b9a888
-
-###
-
-GET http://localhost:3001/api/boats/63835f77de19c84659b9a888
-Accept: application/json
-
-<> 2022-12-25T165922.200.json
 
 ###
 
