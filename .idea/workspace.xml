@@ -5,22 +5,13 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="c28e3d19-e2ad-4709-8878-8eb309ed1bfa" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/rcb-settings.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/frontend/src/components/AddBoat.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/frontend/src/dev/index.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/frontend/src/dev/palette.jsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/frontend/src/dev/previews.jsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/frontend/src/dev/useInitial.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/httpRequests/2022-12-25T165922.200.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/httpRequests/http-requests-log.http" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/httpRequests/http-requests-log.http" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/rcb-settings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/rcb-settings.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/models/boat.js" beforeDir="false" afterPath="$PROJECT_DIR$/backend/models/boat.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/test/manual.rest" beforeDir="false" afterPath="$PROJECT_DIR$/backend/test/manual.rest" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/frontend/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/package-lock.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/frontend/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/package.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/frontend/src/App.js" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/App.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/src/components/Boats.js" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/components/Boats.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/src/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/components/AddBoat.js" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/components/AddBoat.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/dev/previews.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/dev/previews.jsx" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -177,7 +168,7 @@
       <workItem from="1672360178958" duration="900000" />
       <workItem from="1672361257932" duration="2393000" />
       <workItem from="1672363683289" duration="5405000" />
-      <workItem from="1672794081480" duration="4801000" />
+      <workItem from="1672794081480" duration="6834000" />
     </task>
     <servers />
   </component>

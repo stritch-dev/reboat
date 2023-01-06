@@ -1,24 +1,21 @@
 import axios from "axios";
 import {useEffect, useState} from "react";
 
-
-
-
 export const AddBoatForm = () => {
-
-  useEffect(() =>   effect()  , []);
-
   const [newBoat, setNewBoat] = useState({})
 
-const effect = () => {
-  console.log("posting with effect...")
-  axios
-    .post("http://localhost:3001/api/boats", {"boat_name": "frost-cold", "boat_type": "gallop"})
-    .then(() => {
-      console.log("in axios then")
-    })
-  console.log("after axios post")
-}
+  const effect = () => {
+    console.log(" top of effect newBoat is ", newBoat);
+    if (newBoat.boat_name && newBoat.boat_type) {
+      axios
+        .post("http://localhost:3001/api/boats", newBoat)
+        .then(() => {
+          console.log(" after axios posted newBoat ", newBoat)
+        })
+    }
+  }
+
+  useEffect(() => effect(), []);
 
   const addBoat = event => {
     const boatName = event.target.boat_name
@@ -32,20 +29,7 @@ const effect = () => {
       "boat_type": newBoat.boat_type
     }
     setNewBoat(boatObject)
-    console.log("boatObject", boatObject)
-
-    axios
-      .post("http://localhost:3001/api/boats", boatObject)
-      .then(() => {
-        console.log("in axios post")
-        setNewBoat('')
-      })
-    console.log("after axios")
-
   }
-
-
-
 
 
   const handleBoatNameChange = event => {
@@ -53,7 +37,7 @@ const effect = () => {
     event.preventDefault()
     newBoat.boat_name = event.target.value
     setNewBoat(newBoat)
-    console.log(" boat name", newBoat.boat_name)
+    console.log(" newBoat ", newBoat)
     console.log("+ handleBoatNameChange")
   }
 
@@ -62,7 +46,7 @@ const effect = () => {
     event.preventDefault()
     newBoat.boat_type = event.target.value
     setNewBoat(newBoat)
-    console.log(" boat type", newBoat.boat_type)
+    console.log(" newBoat ", newBoat)
     console.log("- handleBoatTypeChange")
   }
   return (
@@ -78,7 +62,7 @@ const effect = () => {
                onChange={handleBoatNameChange}
         />
 
-        <input id="inputBs.atType"
+        <input id="inputBoatType"
                type="text"
                value={newBoat.boat_type}
                onChange={handleBoatTypeChange}

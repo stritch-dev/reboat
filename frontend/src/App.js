@@ -14,18 +14,13 @@ const App = () => {
   const serverUrl = 'http://localhost:3001/api/boats'
   const [boats, setBoats] = useState([])
 
-  // useEffect(() => {
-  //   console.log("using effect...")
-  //   axios
-  //     .get(serverUrl)
-  //     .then(response => {
-  //       console.log('promise fulfilled')
-  //       setBoats(response.data)
-  //       console.log("react app useEffect loading data from express", response.data)
-  //     })
-  // }, [])
-
-
+  useEffect(() => {
+    axios
+      .get(serverUrl)
+      .then(response => {
+        setBoats(response.data)
+      })
+  }, [])
 
   const match = useMatch('/boats/:boat_name')
   const matchedBoat = match
@@ -36,7 +31,7 @@ const App = () => {
     <div>
       <div>
         {matchedBoat}
-        <Link style={padding} to={"/"}>Home</Link>
+       <Link style={padding} to={"/"}>Home</Link>
         <Link style={padding} to={"/boats"}>Fleet</Link>
         <Link style={padding} to={"/add"}>Add a Boat</Link>
       </div>
