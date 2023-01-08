@@ -1,36 +1,51 @@
 import axios from "axios";
-import {useEffect, useState} from "react";
+import {useState} from "react";
 
 export const AddBoatForm = () => {
+  // state persists when re-rending
+  // here newBoat is the state value returned by useState()
+  // here setNewBoat is the update function returned by useState()
+  // here the initialState is an empty object
+  // although initialState does not have to be an object
   const [newBoat, setNewBoat] = useState({})
 
-  const effect = () => {
-    console.log(" top of effect newBoat is ", newBoat);
+  // With Hooks, you use state and other React feature without classes
+  // Hooks are functions that "allow the reuse of stateful logic"
+  // Rules of Hooks
+  // Only Call Hooks
+  //   from react components so that they have access to props(i.e. state variables)
+  //   from top level before any return
+  //   from custom hooks
+  // Hooks do not stop browser from updating screen whereas componentDidMount() and componentDidUpdate() do black
+  // Do Not Call Hooks
+  //   in loops
+  //   in conditionals
+  //   in nested functions
+  // Hooks do not work in classes
+
+  const postNewBoat = () => {
     if (newBoat.boat_name && newBoat.boat_type) {
       axios
         .post("http://localhost:3001/api/boats", newBoat)
         .then(() => {
-          console.log(" after axios posted newBoat ", newBoat)
         })
     }
   }
 
-  useEffect(() => effect(), []);
+  // these side effects like "postNewBoat" are called after rendering
+  // useEffect "serves the same function as
+  //   componentDidMount
+  //   componentDidUpdate
+  //   componentWillUnmount
+  // useEffect runs AFTER every render (including the first)
+  // render == update the DOM
+  // useEffect(() => postNewBoat, []);
 
-  const addBoat = event => {
-    const boatName = event.target.boat_name
-    const boatType = event.target.boat_type
-    console.log("event ", event)
-    console.log("event.value ", event.value)
-    console.log("boat_name ", boatName)
-    console.log("boat_type ", boatType)
-    const boatObject = {
-      "boat_name": newBoat.boat_name,
-      "boat_type": newBoat.boat_type
-    }
-    setNewBoat(boatObject)
+  const handleSubmit = e => {
+    e.preventDefault()
+    postNewBoat()
+    setNewBoat(newBoat)
   }
-
 
   const handleBoatNameChange = event => {
     console.log("- handleBoatNameChange")
@@ -50,12 +65,11 @@ export const AddBoatForm = () => {
     console.log("- handleBoatTypeChange")
   }
   return (
-
     <>
       <h1>Add a Boat to the Fleet</h1>
       name: {newBoat.boat_name}
       type {newBoat.boat_type}
-      <form onSubmit={addBoat}>
+      <form onSubmit={handleSubmit}>
         <input id="inputBoatName"
                type="text"
                value={newBoat.boat_name}
@@ -70,6 +84,5 @@ export const AddBoatForm = () => {
         <input type="submit" value="Add"/>
       </form>
     </>
-
   )
 }

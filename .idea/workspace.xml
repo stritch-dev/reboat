@@ -7,11 +7,7 @@
     <list default="true" id="c28e3d19-e2ad-4709-8878-8eb309ed1bfa" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/rcb-settings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/rcb-settings.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/package-lock.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/src/App.js" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/App.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/frontend/src/components/AddBoat.js" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/components/AddBoat.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/src/dev/previews.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/dev/previews.jsx" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -168,7 +164,9 @@
       <workItem from="1672360178958" duration="900000" />
       <workItem from="1672361257932" duration="2393000" />
       <workItem from="1672363683289" duration="5405000" />
-      <workItem from="1672794081480" duration="6834000" />
+      <workItem from="1672794081480" duration="7787000" />
+      <workItem from="1673130934413" duration="5111000" />
+      <workItem from="1673215660096" duration="474000" />
     </task>
     <servers />
   </component>
